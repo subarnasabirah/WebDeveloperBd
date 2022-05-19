@@ -1,0 +1,36 @@
+1. Basic/Primitive Data Type
+2. Complex/Reference Data Type
+
+1. Primitive Data Types
+
+i) Numbers: for numbers of any kind: integer or floating point.
+Exm: (4, 2, 6 etc)
+ii) String: for strings A atring may have one or more character.
+Exm: ('Hello World')
+iii) Boolean: for true/false
+Exm: (True or False)
+iv) Null: for unknown values - a standalone type that has a single value null.
+Exm: (null)
+v)Undefined: for unassigned values - a standalone type that has a single value undefined
+Exm: (undefined)
+vi)Symbol: for unique identifires
+Exm: Symbol('subarna') !== Symblo('subarna')  
+
+2 Complex/Referenc Data Types
+
+i) Array ([1, 2, 3, 4, 5])
+ii)Object( student = {name: 'subarna', roll: 14}
+
+Variable 3 types
+
+1. var
+2. let
+3. const
+
+variable definition: Identifying a container in memory space and saving data.
+Refer when It's required
+
+Exm: var grettings = 'Hello Wold'
+var = keywords
+grettings = reference
+Hello World = value
