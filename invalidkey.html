@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invalid Key</title>
+  </head>
+  <br>
+      <p>someObject._name = 'Subarna'; -> <b>_name</b> keyword is a valid keyword and it is possible to assign data.</p><br />
+      <p> someObject.age = 6; -> <b>age</b> keyword is a valid keyword and it is possible to assign data.</p><br />
+      <p> someObject[prop] ='red'; -> <b>[prop]</b> keyword is a valid process and thus data can be updated.</p><br />
+      <p> someObject.123 = true; -> <b>123</b> keyword is a invalid keyword and it is not possible to assign data. if we want to assign data, then you have to write like this someObject.['123 ']= true; </p><br />
+
+    <script type="text/javascript">
+      const someObject = {};
+      someObject._name = 'Subarna';
+      someObject.age = 6;
+      let prop = 'color';
+      someObject[prop] ='red';
+    //   someObject.123 = true;
+
+      console.log(someObject);
+    </script>
+  </body>
+</html>
