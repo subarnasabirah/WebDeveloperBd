@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie DB For Funtion</title>
+  </head>
+  <body>
+    <h1>Movie DB For Function</h1>
+
+    <script type="text/javascript">
+      let movie = [
+        {
+          id: 1,
+          name: 'Movie One',
+          rating: 10,
+          category: 'One',
+        },
+        {
+          id: 2,
+          name: 'Movie Two',
+          rating: 20,
+          category: 'Two',
+        },
+        {
+          id: 3,
+          name: 'Movie Three',
+          rating: 30,
+          category: 'Three',
+        },
+        {
+          id: 4,
+          name: 'Movie Four',
+          rating: 50,
+          category: 'Four',
+        },
+        {
+          id: 5,
+          name: 'Movie Five',
+          rating: 60,
+          category: 'Five',
+        },
+        {
+          id: 6,
+          name: 'Movie Six',
+          rating: 30,
+          category: 'Six',
+        },
+        {
+          id: 7,
+          name: 'Movie Seven',
+          rating: 68,
+          category: 'Seven',
+        },
+        {
+          id: 8,
+          name: 'Movie Eight',
+          rating: 55,
+          category: 'Eight',
+        },
+        {
+          id: 9,
+          name: 'Movie Nine',
+          rating: 70,
+          category: 'Nine',
+        },
+        {
+          id: 10,
+          name: 'Movie Ten',
+          rating: 80,
+          category: 'Ten',
+        },
+      ];
+      let movieIndx = movie[4];
+
+      function movieDBF(id, name, rating, category) {
+        return `Id = ${id}.
+         Movie Name = ${name}.
+         Rating = ${rating}. 
+         Category = ${category}`;
+      }
+
+      const movieDBOutput = movieDBF(
+        movieIndx.id,
+        movieIndx.name,
+        movieIndx.rating,
+        movieIndx.category
+      );
+
+      console.log(movieDBOutput);
+    </script>
+  </body>
+</html>

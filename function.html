@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Practice</title>
+  </head>
+  <body>
+    <h1>Function Practice</h1>
+
+    <script>
+      function profileBuilder() {
+        console.log(
+          'I am Subarna.I am 25.I am a Frontend Developer.I want to learn "JavaScript".'
+        );
+      }
+      profileBuilder();
+      function profileBuilderDynamicInput(
+        name,
+        age,
+        profession,
+        learnInFeature
+      ) {
+        console.log(
+          'I am' +
+            ' ' +
+            name +
+            '. ' +
+            'I am' +
+            ' ' +
+            age +
+            '. ' +
+            'I am a' +
+            ' ' +
+            profession +
+            '. ' +
+            'I want to learn' +
+            ' ' +
+            learnInFeature
+        );
+      }
+      profileBuilderDynamicInput('Subarna', 25, 'Web Developer', 'JavaScript');
+    </script>
+  </body>
+</html>

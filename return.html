@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Return Practice</title>
+  </head>
+  <body>
+    <h1>Return Practice</h1>
+
+    <script>
+      function profileBuilderDynamicInputF(
+        name,
+        age,
+        profession,
+        learnInFeature
+      ) {
+        return `I am ${name}. I am ${age}. I am a ${profession}. I want to learn ${learnInFeature}`;
+      }
+      const output = profileBuilderDynamicInputF(
+        'Subarna',
+        25,
+        'Web Developer',
+        'JavaScript'
+      );
+
+      console.log(output);
+    </script>
+  </body>
+</html>
