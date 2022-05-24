@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Practice</title>
+  </head>
+  <body>
+    <h1>Function Practice</h1>
+
+    <script>
+      var a = 10
+      var b = 20
+      var c = a + b
+      console.log(c)
+
+      var a = 'Subarna'
+      console.log('My name is: ' + a)
+      a = 'Rifa'
+      console.log('Now the name is: ' + a)
+
+      let a6 = 'Subarna'
+      console.log('My name is: ' + a6)
+      a6 = 'Rifa'
+      console.log('Now the name is: ' + a6)
+
+      const b6 = 'Subarna'
+      console.log('My name is: ' + b6)
+      b6 = 'Subarna'
+      console.log('Now the name is: ' + b6)
+
+      function es6var() {
+        if (true) {
+          const a = 6
+        }
+        console.log('Value: ' + a)
+      }
+
+      es6var()
+
+      var i = 13
+
+      for (var i = 0; i < 5; i++) {
+        console.log(i)
+      }
+
+      console.log('Value: ' + i)
+
+      function calculateAge(dob) {
+        return `I'm ${2018 - dob} years old!`
+      }
+
+      calculateAge(1996)
+
+      function defaultParams(name, age) {
+        name ? (name = name) : (name = 'Subarna')
+        age ? (age = age) : (age = 21)
+        console.log('My name is ' + name + ' and I am ' + age + ' years old!')
+      }
+    </script>
+  </body>
+</html>
