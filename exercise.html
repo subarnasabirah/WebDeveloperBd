@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditionals in Javascript</title>
+  </head>
+  <body>
+    <h1>Condition Practice in JavaScript</h1>
+
+    <script>
+      let age = '10';
+   if( age < 10){
+     console.log('stay home under your mom supervision');
+   }else if(age >= 10 && age < 15){
+     console.log('Try to gain knowledge from outside of home');
+   }else if(age >= 15 && age < 18){
+     console.log('prepare to cast vote');
+
+   }else if(age >= 18){
+     console.log('cast you vote');
+   }else{
+     console.log('You are out of range');
+   }
+
+
+   
+     let age_2 = 18;
+     switch(true){
+       case  age_2 < 10:
+         console.log('stay home under your mom supervision');
+       break;
+       case  age_2 >= 10 &&  age_2 < 15:
+          console.log('Try to gain knowledge from outside of home');
+       break;
+       case  age_2 >= 15 &&  age_2 < 18:
+           console.log('prepare to cast vote');
+       break;
+       case  age_2 >= 18:
+            console.log('cast you vote');
+       break;
+       default:
+           console.log('You are out of range');
+       break;
+         
+     }
+ 
+
+    </script>
+  </body>
+</html>
