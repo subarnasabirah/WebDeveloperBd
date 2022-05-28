@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditionals in Javascript</title>
+  </head>
+  <body>
+    <h1>Condition Practice in JavaScript</h1>
+
+    <script>
+    //Exercise -1 
+     let num = 1;
+     while(num <= 10 ){
+       console.log(num);
+       num += 2;
+     }
+
+     //Exercise -2 
+
+    let num2 = 1;
+     while(num2 <= 20 ){
+       if(num2 % 4 === 0){
+          console.log(num2);
+       }
+      
+       num2 ++
+     }
+
+     //Exercise -3
+
+     const num3 = 100;
+     while(num3 < 150){
+       console.log(num3 + 1);
+       num3--;
+     }
+
+     //Exercise -4 with while loop
+
+     let num4 = 0;
+     while(num4 <= 100 ){
+       if(num4 % 2 === 0){
+          console.log(num4);
+       }
+      
+       num4 ++
+     }
+
+      //Exercise -5 with for loop
+
+      for(let num5 = 0; num5 <= 100; num5++){
+        if(num5 % 2 === 0){
+          console.log(num5);
+        }
+      }
+
+
+
+function pyramid(n) {
+
+  for(let i=1; i<= n; i++){
+
+    let str = ' '.repeat(n-i);
+
+    let str2 = '$'. repeat(i*1 -0)
+
+    console.log(str + str2 + str);
+
+  }
+
+}
+
+pyramid(6);
+
+
+  //Exercise -7 with for loop
+
+  function fizzBuzz2(n) {
+    for (let i = 1; i <= n; i++) {
+      let str = "";
+
+      if (i % 3 === 0) str += "fizz"
+      if (i % 5 === 0) str += "buzz"
+      if (str === "") str = i;
+    
+      console.log(str);
+    }
+  }
+  fizzBuzz2(100);
+
+
+ 
+
+    </script>
+  </body>
+</html>
