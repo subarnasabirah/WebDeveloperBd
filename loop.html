@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loop in Javascript</title>
+  </head>
+  <body>
+    <h1>Loop Practice in JavaScript</h1>
+
+    <script>
+     let profile = [1, 2, 3]
+     for(let i = 0; i <= 10; i++){
+       if(i % 2 === 0){
+         console.log(i)
+       }if(i === 5){
+         continue
+       }
+     }
+//============================================
+    let arr = [1, 2, 3]
+
+    for(i=0; i <= arr.length; i++){
+      console.log(i)
+      console.log(arr[i])
+    }
+
+    for(let value of arr){
+      console.log(value);
+    }
+//============================================
+    const obj = {
+      a: 1,
+      b: 2
+    }
+
+    console.log(Object.keys(obj).length)
+
+    const objLength = Object.keys(obj).length
+
+    for(i=0; i <= objLength; i++){
+      // console.log(i)
+      const objArr = Object.keys(obj)
+      console.log(obj[arrObj[i]])
+    }
+
+    for (let key in obj){
+      console.log(obj[key])
+    }
+const objM = {
+      a: 1,
+      b: 2
+    }
+   const objValuesLength = Object.values(objM).length
+
+
+    for(i=0; i <= objValuesLength; i++){
+       const objValArr = Object.values(objM)
+      console.log(objValArr[i])
+      
+    }
+    //==========================================
+
+    function calculate(num1, num2){
+      const sum = num1 + num2;
+      const sub = num1 - num2;
+      // return [sum, sub]
+      return{
+        sum, sub
+      }
+    }
+    console.log(calculate(1, 2))
+     
+   function calculate(num1, num2, action){
+     let result
+     if(action === 'sum'){
+      result = num1 + num2;
+     }else{
+       result = num1 - num2;
+
+     }
+      
+      return result;
+    }
+    console.log(calculate(1, 2, 'sum'))
+
+    //===========================================
+
+    const numArr = [1, 2, 3];
+
+    function sum(numArr){
+     return numArr[0] + numArr[1] + numArr[2]
+      
+
+    }
+    console.log(sum(numArr))
+
+     const numArrTwo = [1, 2, 3];
+
+    function sum(nums){
+      let totalNumber = 0
+      for(let number of nums){
+        totalNumber += number;
+      }
+     return totalNumber
+      
+
+    }
+    console.log(sum(numArrTwo))
+    //====================================================
+
+    let aObj={
+      name: 'subarna'
+
+    }
+    function passByRef(myObj){
+      let bObj = myObj
+      console.log(bObj)
+      bObj.age = 20
+      console.log(bObj)
+    }
+    passByRef(aObj)
+     console.log(aObj)
+
+    </script>
+  </body>
+</html>
