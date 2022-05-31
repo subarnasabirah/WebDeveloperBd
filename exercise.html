@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditionals in Javascript</title>
+  </head>
+  <body>
+    <h1>Condition Practice in JavaScript</h1>
+
+    <script>
+     const product = {
+       name: 'Print T-shirt',
+       price: 10,
+       'is available': true
+     }
+
+     //Dynamically access properties
+     const availability ='is available';
+
+     console.log(product.name)
+     console.log(product['name'])
+     console.log(product['is available'])
+     console.log(product[availablitity])
+
+     //==================================================
+
+     const product2 = {
+       name: 'Print T-shirt',
+       price: 10,
+       productDesc(){
+         return`${this.name}-$${this.price}`
+       }
+     }
+     console.log(product2.productDesc())
+
+     //=============================================================
+//Factory function
+      function product(name, price, availability){
+        return{
+          name,
+          price,
+          "is available": availability,
+          productDesc(){
+            return `${this.name}-$${this.price}`
+          }
+        }
+      }
+      console.log(product('T-shirt', 10, true))
+
+
+      //Constructor Function
+      function Product(name, price){
+        this.name = name;
+        this.price = price;
+        this.productDesc = function(){
+          return `${this.name}-$${this.price}`;
+        }
+      }
+      const Product1 = new Product('Sneaker', 60)
+
+    </script>
+  </body>
+</html>
