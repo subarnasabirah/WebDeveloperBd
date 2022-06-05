@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditionals in Javascript</title>
+  </head>
+  <body>
+    <h1>Closer hosting and scope Practice in JavaScript</h1>
+
+    <script>
+
+      function localScope() {
+        var local = 'I am local to my own function';
+        console.log(local);
+      }
+     function localScope() {
+        var local = 'I am local to my own function';
+        console.log(local);
+      }
+
+      localScope();
+
+      console.log(local);
+      //========================================================
+      
+        var globalVar = 'I am a Global Variable';
+
+        function globalScope() {
+          console.log('Inside a Function: ' + globalVar);
+        }
+
+        globalScope();
+
+        console.log('Outside: ' + globalVar);
+
+        //================================================
+        function parentFunction() {
+          var a = 6;
+          function childFunction() {
+              var b = 4;
+              console.log('Sum: ' + (a + b));
+          } 
+          childFunction();
+        }
+        //=======================================================
+
+        aFunc();
+
+        function aFunc() {
+          var a = 10;
+          var b = 20;
+          var sum = a + b;
+          console.log('Sum: ' + sum);
+        }
+        //=====================================================
+
+        function closuresDemo() {
+          var x = 10;
+          return function() {
+              var y = 20;
+              console.log('Sum: ' + (x + y));
+          }
+        }
+
+    </script>
+  </body>
+</html>
