@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditionals in Javascript</title>
+  </head>
+  <body>
+    <h1>More Array</h1>
+
+    <script>
+
+      //Coping Array
+
+      const numbers = [1, 2, 3, 5, 7, 10];
+      // const copiedArray = [...numbers];
+      // const copiedArray = numbers;
+      const copiedArray = numbers.splice(0);
+
+      console.log(copiedArray)
+
+      //Empty array
+
+      let numbers2 = [1, 3, 5, 7, 10];
+
+      const anotherNumbers = numbers;
+
+      //numbrs = [];
+      numbers.length = 0
+      console.log(numbers)
+      console.log(anotherNumbers)
+
+      let numbers3 = [1, 3, 5, 7, 10];
+      numbers.forEach(function(num,index,arr){
+        console.log(index);
+        console.log(arr);
+        console.log(num)
+      })
+
+      for(let [index, number] of Object.entries(numbers)){
+        console.log(index, number)
+      }
+      //Array Sort
+
+      const products = [
+        {
+          id: 1,
+          name: 'T-Shirt',
+          price: 10
+        },
+         {
+          id: 3,
+          name: 'Memory',
+          price: 20,
+        },
+         {
+          id: 2,
+          name: 'shoes',
+          price: 60
+        }
+      ];
+      const sortedResult = products.sort(function(a, b){
+        // a > b =1
+        // a < b = -1
+        // a === b = 0
+        // if(a.id > b.id) return 1;
+
+        // if(a.id < b.id) return -1;
+
+        // return((a.id > b.id) ? 1 : -1) || 0
+
+        const valueA = a.name.toLocaleLowerCase();
+        const valueB = b.name.toLocaleLowerCase();
+        if(valueA > valueB) return 1;
+        if(valueA < valueB) return -1;
+        return 0;
+      })
+
+      console.log(sortedResult)
+
+      //Reduce function
+      const numberFive = [1, 4, 6, 10];
+
+      // acc = 1 cur = 4
+      // acc = 5 cur = 6
+      // acc = 11 cur = 10
+      // acc = 21
+
+      
+      // acc = 10 cur = 1
+      // acc = 11 cur = 4
+      // acc = 15 cur = 6
+      // acc = 21 cur = 10
+      // acc =31
+
+      const sum = numbers.reduce((accumulator, current) => {
+        return accumulator + current;
+      }, 10);
+
+      console.log(sum);
+
+      //Every and some method
+
+      let numbers5 = [1, 7, 3, 9];
+      // const result = numbers.every((number) => {
+      //   return numbers5 > 1;
+      // });
+       const result = numbers.some((number) => {
+        return numbers5 > 1;
+      });
+
+      console.log(result)
+
+
+
+    </script>
+  </body>
+</html>
